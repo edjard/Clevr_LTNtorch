@@ -1,0 +1,19 @@
+# Requirements
+%pip list | grep -E "numpy|scikit-image|scipy"
+
+%conda install -c conda-forge scikit-image --yes
+
+# Run this in a cell before your imports
+%pip uninstall -y scikit-image
+%pip install --no-cache-dir scikit-image
+
+%pip install --upgrade --force-reinstall numpy scikit-image
+
+# Run this in a cell before your imports
+%pip uninstall -y scikit-image
+%pip install --no-cache-dir scikit-image
+
+#----------------------------------------------------------------------------------------------------
+%pip install opencv-python
+%pip install opencv-python-headless
+%pip install LTNtorch
